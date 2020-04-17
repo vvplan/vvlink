@@ -1,15 +1,7 @@
 ---
 layout: page
-title: 关于我
+title: 项目简介
 permalink: /about/
 ---
 
-这是 *About（关于）* 页面。 像其他页面一样, 这是用[Markdown](https://guides.github.com/features/mastering-markdown/)格式书写的。
-
-此网站由 **[fastpages](https://github.com/fastai/fastpages)** [^1]提供**技术**支持。
-
-此网站由 **[EasonQYS](https://github.com/EasonQYS/fastpagesJupyter)** [^2]提供**汉化**支持。
-
-[^1]:一个除了普通格式外还支持Jupyter的博客。
-
-[^2]:第一个中文汉化版本。
+“万物互联”的时代正渐行渐近，物联网技术也越来越受到创客教育、STEAM教育领域的重视。“虚谷物联“项目是“虚谷计划”的子项目，由“虚谷计划”组委会发起，提供了开源MQTT服务器SIoT。SIoT可以布署在本地电脑，同时支持WebAPI，结合虚谷号和掌控板，让物联网技术进入基础教育成为可能，不仅可以搭建各种物联网应用，还提供了以“数据探究”的方式去研究科学的新手段。
