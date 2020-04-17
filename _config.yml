@@ -6,11 +6,11 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: 中文博客模板
-description: 便捷实用的Jupyter博客网站。此外，还支持 Word 文档，以及 Markdown。
-github_username: EasonQYS  # 你的用户名
+title: 虚谷计划之虚谷物联
+description: 虚谷物联提供了一个完整的解决方案，利用可以布署在本地的MQTT服务器软件，结合掌控板、虚谷号搭建各种物联网应用，旨在推进中小学物联网技术的教学。
+github_username: xiezuoru  # 你的用户名
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "fastpagesJupyter" #你的仓库名
+github_repo: "vvlink" #你的仓库名
 
 # OPTIONAL: override baseurl and url if using a custom domain 可选项，如果你有自己的域名，并且需要绑定到该网站
 # Note: leave out the trailing / from this value.  写下域名，不要在最后加斜杠/ 
@@ -34,13 +34,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/fastpagesJupyter" # the subpath of your site, e.g. "/blog".网站子路径，一般是仓库名或留空或子目录
+baseurl: "/vvlink" # the subpath of your site, e.g. "/blog".网站子路径，一般是仓库名或留空或子目录
 
 # Github and twitter are optional:可以在网页底部显示自己的推特和github链接
 minima:
   social_links:
     twitter: 
-    github: EasonQYS
+    github: vvplan
 
 # Set this to true to get LaTeX math equation support 显示LaTeX数学符号
 use_math: true
