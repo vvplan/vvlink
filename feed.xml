@@ -1,4 +1,244 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/vvlink/feed.xml" rel="self" type="application/atom+xml" /><link href="/vvlink/" rel="alternate" type="text/html" /><updated>2020-04-18T02:06:08-05:00</updated><id>/vvlink/feed.xml</id><title type="html">虚谷计划之虚谷物联</title><subtitle>虚谷物联提供了一个完整的教育解决方案，利用可以布署在本地的MQTT服务器软件，结合掌控板、虚谷号搭建各种物联网应用，旨在推进中小学物联网技术的教学。</subtitle><entry><title type="html">设计一个多人互动游戏</title><link href="/vvlink/2020/04/15/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%BA%BA%E4%BA%92%E5%8A%A8%E6%B8%B8%E6%88%8F.html" rel="alternate" type="text/html" title="设计一个多人互动游戏" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>/vvlink/2020/04/15/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%BA%BA%E4%BA%92%E5%8A%A8%E6%B8%B8%E6%88%8F</id><content type="html" xml:base="/vvlink/2020/04/15/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%BA%BA%E4%BA%92%E5%8A%A8%E6%B8%B8%E6%88%8F.html">&lt;p&gt;设计一个多人互动游戏——以“赛龙舟”为例&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/vvlink/feed.xml" rel="self" type="application/atom+xml" /><link href="/vvlink/" rel="alternate" type="text/html" /><updated>2020-04-18T02:08:02-05:00</updated><id>/vvlink/feed.xml</id><title type="html">虚谷计划之虚谷物联</title><subtitle>虚谷物联提供了一个完整的教育解决方案，利用可以布署在本地的MQTT服务器软件，结合掌控板、虚谷号搭建各种物联网应用，旨在推进中小学物联网技术的教学。</subtitle><entry><title type="html">新旧汽车的甲醛检测</title><link href="/vvlink/2020/04/16/%E6%96%B0%E6%97%A7%E6%B1%BD%E8%BD%A6%E7%9A%84%E7%94%B2%E9%86%9B%E6%A3%80%E6%B5%8B.html" rel="alternate" type="text/html" title="新旧汽车的甲醛检测" /><published>2020-04-16T00:00:00-05:00</published><updated>2020-04-16T00:00:00-05:00</updated><id>/vvlink/2020/04/16/%E6%96%B0%E6%97%A7%E6%B1%BD%E8%BD%A6%E7%9A%84%E7%94%B2%E9%86%9B%E6%A3%80%E6%B5%8B</id><content type="html" xml:base="/vvlink/2020/04/16/%E6%96%B0%E6%97%A7%E6%B1%BD%E8%BD%A6%E7%9A%84%E7%94%B2%E9%86%9B%E6%A3%80%E6%B5%8B.html">&lt;p&gt;新旧汽车的甲醛检测——基于物联网的科学探究活动案例&lt;/p&gt;
+
+&lt;p&gt;温州市第四中学 郑祥&lt;/p&gt;
+
+&lt;p&gt;温州市艺术学校 王国芳&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;项目背景&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;现在的人们越来越追求高品质的生活，要么购买新房更换居住空间，要么对现有的居住环境进行改造，“装修”成为当前的热点话题。甲醛是近年来受到大众认知的危害，不仅会污染环境，更重要的是会对人体产生极大的影响。可是并不是所有人对甲醛都了解的，可能只知道家居建材中有甲醛的存在，其实生活中有不少地方都可能受到甲醛的污染，比如汽车。&lt;/p&gt;
+
+&lt;p&gt;2003年3月1日开始实施的我国推荐性标准《室内空气质量标准(GB/T 18883-2002)》规定，室内甲醛浓度要求小于等于每立方米0.1毫克(0.1mg/m3)，即每立方米空气中的甲醛浓度不得超过0.1毫克。中华人民共和国国家标准《居室空气中甲醛的卫生标准》规定：居室空气中甲醛的最高容许浓度为0.08毫克/立方米。&lt;/p&gt;
+
+&lt;p&gt;那么，汽车内的甲醛含量究竟如何呢？这是一个值得探究的问题。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;研究目标&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;1.了解甲醛的产生及危害，掌握掌控板和传感器的基本使用，掌握物联网技术的基本原理。&lt;/p&gt;
+
+&lt;p&gt;2.培养学生提出问题和实验设计能力，通过探究汽车甲醛含量的活动，学习数据采集和数据处理方法，培养学生总结归纳能力；&lt;/p&gt;
+
+&lt;p&gt;3.初步认识科学、技术与社会的关系，了解科学探究的过程和方法，培养科学探究的精神品质；并能将科学知识和生活密切结合起来。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;研究内容&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;1.新买的汽车车内甲醛浓度多少？是否超过国家标准？&lt;/p&gt;
+
+&lt;p&gt;2.已经开了五年的旧汽车车内甲醛浓度多少？是否超过国家标准？&lt;/p&gt;
+
+&lt;p&gt;3.如何利用物联网和传感器技术，实时测定汽车内的甲醛浓度？&lt;/p&gt;
+
+&lt;p&gt;4.如何基于测量数据的分析，从而得出降低汽车内甲醛浓度的有效方法？&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;研究方法&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（一）实验研究法&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;将同一品牌同一型号的两辆新旧汽车放在同一地点，将灵敏度接近的甲醛检测装置分别同时放入新旧汽车的车内中心同一位置，并保持甲醛传感器悬空放置。保证同时开窗5分钟的前提下同时关闭窗户，接受相同强度的阳光直射。利用甲醛检测装置每隔半分钟定时持续地采集新旧车内的甲醛浓度，并将新旧车内的甲醛浓度记录在物联网平台上。&lt;/p&gt;
+
+&lt;p&gt;（二）定量分析法&lt;/p&gt;
+
+&lt;p&gt;通过物联网平台上新旧两辆汽车的甲醛浓度数据变化和对比，从而得出新旧汽车车内的甲醛含量，以及是否超过国家标准。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;实验原理&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;实验过程中需要一辆新车和一辆旧车（同一品牌和型号）在开窗后闭窗的初始状态下，同时在相同的阳光下暴晒来完成对成甲醛浓度数据的采集。甲醛数据的采集实验原理过程如下图所示。核心工作是利用掌控板和专用传感器采集甲醛浓度的数据，再将数据汇总到SIoT服务器。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/vvlink/assets/img/2020-04-16-新旧汽车的甲醛检测/media/image1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;图 甲醛检测原理图&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;为了提高实验数据的可靠性和可对比性，实验过程中需要通过无线网络的形式同时进行新旧汽车甲醛数据的实时收集。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;因此，甲醛采集装置须满足以下条件：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1.两个甲醛传感器的灵敏度应较为接近。&lt;/p&gt;
+
+&lt;p&gt;2.接有甲醛传感器的数据采集装置要支持Wi-Fi的连接。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;活动步骤&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;（一）第一阶段：准备器材、下载并安装软件。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;准备器材&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（1）两辆新旧不同的相同型号汽车。&lt;/p&gt;
+
+  &lt;p&gt;（2）根据甲醛测试实验，需要以下器材。&lt;/p&gt;
+
+  &lt;p&gt;表1：甲醛测试实验器材表&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;编号&lt;/th&gt;
+      &lt;th&gt;器材&lt;/th&gt;
+      &lt;th&gt;数量&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;HCHO甲醛传感器&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;两个传感器的灵敏度须非常接近。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;掌控板&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;扩展板&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;采用扩展板连接传感器&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;锂电池&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;锂电池的电量保证充满状态。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;供电线&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;汽车&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;同一型号，不同年限。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;下载并安装软件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（1）下载并安装编程软件mind+1.6及以上的版本。&lt;/p&gt;
+
+  &lt;p&gt;下载地址：&lt;a href=&quot;http://mindplus.cc/&quot;&gt;http://mindplus.cc/&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;（2）下载并运行最新版的局域网物联网平台SIoT。&lt;/p&gt;
+
+  &lt;p&gt;下载地址：&lt;a href=&quot;https://siot.readthedocs.io/zh_CN/latest/&quot;&gt;https://siot.readthedocs.io/zh_CN/latest/&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;（3）连接甲醛传感器和掌控板&lt;/p&gt;
+
+  &lt;p&gt;甲醛传感器连接扩展板的p0针脚。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/vvlink/assets/img/2020-04-16-新旧汽车的甲醛检测/media/image2.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;图 甲醛传感器和掌控板的连接&lt;/p&gt;
+
+  &lt;p&gt;（4）校正两个甲醛传感器的灵敏度和数据。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;保证两个传感器的灵敏度非常接近，在允许的误差范围内。并且要利用专用的甲醛检测仪器，比较二者数据的差异。&lt;/p&gt;
+
+&lt;p&gt;（二）第二阶段：搭建物联网平台、制作甲醛检测仪&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;在PC上运行物联网平台SIoT。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;编程实现。Mind+中已经提供了物联网采集数据的范例代码，只要做一些修改即可。参考代码如图所示。新车和旧车的代码基本一致，不同的是MQTT的消息主题（TopicID）和屏幕显示的文字。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/vvlink/assets/img/2020-04-16-新旧汽车的甲醛检测/media/image3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图甲醛浓度检测装置的程序&lt;/p&gt;
+
+&lt;p&gt;（三）第三阶段：数据检测与分析&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;变量控制&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;将新旧两辆汽车同时停在同一地方，同时打开车窗5分钟后同时关闭车窗，并将甲醛检测装置分别放置在两辆汽车的前后排中间，甲醛传感器保持悬空放置。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/vvlink/assets/img/2020-04-16-新旧汽车的甲醛检测/media/image7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;图 新旧汽车在同一环境下暴晒&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;数据采集&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在SIoT的Web管理页面中，能够看到实时收集的数据。页面中还提供了自动刷新的简单图表。&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/vvlink/assets/img/2020-04-16-新旧汽车的甲醛检测/media/image8.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;图 新车的甲醛浓度数值&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;/vvlink/assets/img/2020-04-16-新旧汽车的甲醛检测/media/image9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;图 旧车的甲醛浓度数值&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;数据分析&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;检测初期：从两组折线图可以看出，检测初期由于开车门的原因，车内甲醛浓度受开关车门有一定的影响，因此检测初期的数值并不准确，但可供参考。&lt;/p&gt;
+
+  &lt;p&gt;检测中期：从检测中期的数据可以得出，两辆车的甲醛浓度都在持续地上升，而新车的甲醛浓度上升速度更快，几乎是成线性上升状态。25分钟后，新车内的甲醛浓度高达0.25ppm左右，是国标线的4倍左右；而与此同时，旧车内甲醛浓度虽也有上升，但仍在国标线的标准0.08ppm左右。&lt;/p&gt;
+
+  &lt;p&gt;检测后期：出于好奇的原因，在检测的后期两位检测人员试着开了一下车门。从两组折线图中也可以看出甲醛浓度的曲线都有一个“v”字型走向。&lt;/p&gt;
+
+  &lt;p&gt;通过SIoT收集的数据，还可以导出为Xls表格文件，供后期做更加详细的分析。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;项目总结&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;通过数据分析，我们可以得出这样的一些结论。&lt;/p&gt;
+
+&lt;p&gt;结论1：从检测中期的折线图可以得出，在温度很高的情况下，新车的室内甲醛浓度超过国家标准浓度0.08ppm的好几倍，要经常通风。&lt;/p&gt;
+
+&lt;p&gt;结论2：从检测后期的折线图和操作情况可以得出，一个开车门的动作就可以让当前车内甲醛浓度降低一半左右，建议在开车前先打开车门或车窗通风几分钟。长时间行车请要打开外循环，或者定时摇下玻璃窗通风。&lt;/p&gt;
+
+&lt;p&gt;结论3：新旧车辆的内部甲醛浓度还是有差别的，旧车内的甲醛浓度明显低于新车内的甲醛浓度，但在暴晒的时候最高浓度仍会超出国标线，无论新车还是旧车在开车前都建议开车门或开车窗通风几分钟。长时间行车要注意通风。&lt;/p&gt;
+
+&lt;p&gt;八、项目反思&lt;/p&gt;
+
+&lt;p&gt;实验探究是培养学生科学素养的重要手段。信息化时代，数字化技术为科学探究提供了更多的技术支持，能完成一些传统探究手段无法完成的试验项目。尤其是当物联网技术的低门槛后，基于数字化技术的科学探究活动也不再局限在实验中，可以走出来在大自然里，设计各种有趣的探究实验，尤其那些需要一定周期的数据支持的科学实验。“新旧汽车的甲醛检测”仅仅是一个小小的开端，我们还会带着学生做更多探究实验。&lt;/p&gt;</content><author><name></name></author><summary type="html">新旧汽车的甲醛检测——基于物联网的科学探究活动案例</summary></entry><entry><title type="html">设计一个多人互动游戏</title><link href="/vvlink/2020/04/15/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%BA%BA%E4%BA%92%E5%8A%A8%E6%B8%B8%E6%88%8F.html" rel="alternate" type="text/html" title="设计一个多人互动游戏" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>/vvlink/2020/04/15/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%BA%BA%E4%BA%92%E5%8A%A8%E6%B8%B8%E6%88%8F</id><content type="html" xml:base="/vvlink/2020/04/15/%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%BA%BA%E4%BA%92%E5%8A%A8%E6%B8%B8%E6%88%8F.html">&lt;p&gt;设计一个多人互动游戏——以“赛龙舟”为例&lt;/p&gt;
 
 &lt;p&gt;浙江省温州中学 谢作如&lt;/p&gt;
 
