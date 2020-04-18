@@ -40,6 +40,22 @@
   
 
   
+      ,"page4": {
+          "title": "方案",
+          "content": "如何实施物联网教学？如何建设一个物联网实验室？ . 参考方案 .",
+          "url": "/vvlink/scheme/",
+          "relUrl": "/scheme/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -48,18 +64,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "/vvlink/robots.txt",
