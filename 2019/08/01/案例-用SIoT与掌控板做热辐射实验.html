@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>【案例】用siot与掌控板做热辐射实验 | 虚谷计划之虚谷物联</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="【案例】用siot与掌控板做热辐射实验" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="用SIoT与掌控板做热辐射实验" />
+<meta property="og:description" content="用SIoT与掌控板做热辐射实验" />
+<link rel="canonical" href="/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html" />
+<meta property="og:url" content="/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html" />
+<meta property="og:site_name" content="虚谷计划之虚谷物联" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-01T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"用SIoT与掌控板做热辐射实验","@type":"BlogPosting","headline":"【案例】用siot与掌控板做热辐射实验","dateModified":"2019-08-01T00:00:00-05:00","datePublished":"2019-08-01T00:00:00-05:00","url":"/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html","mainEntityOfPage":{"@type":"WebPage","@id":"/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/vvlink/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/vvlink/feed.xml" title="虚谷计划之虚谷物联" /><link rel="shortcut icon" type="image/x-icon" href="/vvlink/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>【案例】用siot与掌控板做热辐射实验 | 虚谷计划之虚谷物联</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="【案例】用siot与掌控板做热辐射实验" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="用SIoT与掌控板做热辐射实验" />
+<meta property="og:description" content="用SIoT与掌控板做热辐射实验" />
+<link rel="canonical" href="/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html" />
+<meta property="og:url" content="/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html" />
+<meta property="og:site_name" content="虚谷计划之虚谷物联" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-01T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"用SIoT与掌控板做热辐射实验","@type":"BlogPosting","headline":"【案例】用siot与掌控板做热辐射实验","dateModified":"2019-08-01T00:00:00-05:00","datePublished":"2019-08-01T00:00:00-05:00","url":"/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html","mainEntityOfPage":{"@type":"WebPage","@id":"/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="/vvlink/feed.xml" title="虚谷计划之虚谷物联" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/vvlink/">虚谷计划之虚谷物联</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/vvlink/about/">简介</a><a class="page-link" href="/vvlink/resource/">资源</a><a class="page-link" href="/vvlink/scheme/">方案</a><a class="page-link" href="/vvlink/search/">查找</a><a class="page-link" href="/vvlink/categories/">标签</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">【案例】用siot与掌控板做热辐射实验</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2019-08-01T00:00:00-05:00" itemprop="datePublished">
+        Aug 1, 2019
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>用SIoT与掌控板做热辐射实验</p>
+
+<p>宁波市海曙区广济中心小学 狄勇</p>
+
+<p>浙江省温州中学 谢作如</p>
+
+<p>热辐射问题在小学五年级、初中科学课中都有涉及。科学课堂上的实验方法，一般是采用不同颜色的纸袋包裹温度计，或者将温度计插入外表涂上不同颜色的烧瓶，放太阳下暴晒，随时间推移记录温度数据，以验证不同颜色物体吸热本领的大小。</p>
+
+<p>传统教学中做热辐射实验，需要学生长时间在阳光下暴晒观察，依靠人工读数、计时、记录，不但精度不够，也难以在有限的课堂时间内获得明显的实验结果。实验中还会因学生不经意对阳光的遮挡等因素，影响了实验的准确性。如果利用一套可自动计时、记录温度的装置，来做这类与数据探究相关的科学实验，肯定能够大大降低实验教学的实施成本。其实，借助SIoT开源物联网平台，小学生也能够利用掌控板之类的开源硬件，自主搭建这样的实验装置。</p>
+
+<blockquote>
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image1.jpeg" alt="" /></p>
+
+  <p>图 用烧瓶做热辐射实验</p>
+</blockquote>
+
+<ol>
+  <li>用SIoT与掌控板做热辐射实验的原理</li>
+</ol>
+
+<p>在动手搭建实验平台前，我们先梳理一下制作思路。参考教育科学出版社小学《科学》五年级上册“怎样得到更多的光和热”一课的实验记录表，可见在装置设计时，需要在物联网平台记录时间和对应的温度两项数据。教材中设计的2分钟间隔，对于已实现自动记录的实验平台而言有些过长，我们可以设计为1分钟，甚至10秒钟的时间间隔，让细微的温度变化都得以呈现。</p>
+
+<table>
+<thead>
+<tr class="header">
+<th><p>纸的</p>
+<p>种类</p></th>
+<th>刚开始的温度（℃）</th>
+<th>2分钟</th>
+<th>4分钟</th>
+<th>6分钟</th>
+<th>8分钟</th>
+<th>10分钟</th>
+<th><p>我们</p>
+<p>的发现</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>黑色</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>粉色</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>铝箔纸</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>黑色</p>
+<p>蜡光纸</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>白纸</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>用于记录数据的SIoT服务器应与掌控板部署在同一个局域网内，我们可以在教室台式机、教师笔记本电脑上轻松搭建SIoT服务器，其他设备在知道路由器分配给这台电脑的IP地址后，可以利用WIFI访问SIoT服务器。这些设备可以是电脑、手机、micro:bit、Arduino等，当然也包括本文采用的自带WIFI模块的掌控板。装置工作流程如下图：</p>
+
+<blockquote>
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image2.png" alt="" /></p>
+
+  <p>图 工作流程</p>
+</blockquote>
+
+<p>用于检测温度的传感器有不少选择，比如DHT11、BMP280、LM35等。考虑到LM35传感器更为常见，几乎是所有Arduino套件的标配，且测量温度范围满足需求，所以本实验采用LM35线性温度传感器。</p>
+
+<ol>
+  <li>检测装置的硬件搭建</li>
+</ol>
+
+<p>我们的实验是面向全体学生，采用大班授课的形式。器材需求视实验分组数量而定，建议每个小组与测试的颜色一一对应。单组所需材料包括：</p>
+
+<p>掌控板 x1</p>
+
+<p>掌控板的扩展板 x1</p>
+
+<p>LM35线性温度传感器 ×1</p>
+
+<p>烧瓶 ×1</p>
+
+<p>轻质黏土若干</p>
+
+<p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image3.jpeg" alt="" /></p>
+
+<p>图 掌控板和传感器的连接</p>
+
+<p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image4.jpeg" alt="" /></p>
+
+<p>图</p>
+
+<p>将LM35传感器放入烧瓶后，需要用轻质黏土封堵瓶口，避免瓶内空气与外界对流，以获得更好的实验效果。</p>
+
+<ol>
+  <li>SIoT服务器搭建</li>
+</ol>
+
+<blockquote>
+  <p>SIoT的使用手册可通过以下地址访问：https://SIoT.readthedocs.io/zh_CN/latest/</p>
+</blockquote>
+
+<p>作为一个开源项目，SIoT存放于GitHub，点击使用手册的“文件下载”，根据电脑的操作系统选择相应版本软件包即可获得服务器程序。SIoT支持Linux、Mac、Windows，全面覆盖了常见操作系统。不同于通常配置服务器的繁冗，部署SIoT服务器只需解压文件包后，双击运行服务器端程序即可。随后系统会弹出一个控制台窗口，滚屏显示日志信息，这样就算部署完毕了。</p>
+
+<p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image5.png" alt="" /></p>
+
+<ol>
+  <li>实验装置的程序设计</li>
+</ol>
+
+<p>实验装置的程序，使用了DFrobot的Mind+来编写。为了实验中可以将烧瓶摆放到位后再记录数据，程序设计为如果装置接收到“START”指令，才开始发送数据给SIoT，避免了通电就发送无效数据。完整程序见下图：</p>
+
+<blockquote>
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image6.png" alt="" /></p>
+
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image7.png" alt="" /></p>
+
+  <p>图 参考程序</p>
+</blockquote>
+
+<p>要确保掌控板连上SIoT，务必正确配置MQTT的初始化参数，具体请参考SIoT的文档。</p>
+
+<p>将程序上传到掌控板后，如果配置正确，且局域网网络通畅，根据我们设计的程序，掌控板的OLED屏应显示提示信息——“SIoT已连接”。</p>
+
+<ol>
+  <li>系统测试</li>
+</ol>
+
+<blockquote>
+  <p>1. 登录SIoT服务器</p>
+</blockquote>
+
+<p>打开浏览器，如在服务器端，访问：<a href="http://localhost:8080">http://localhost:8080</a>，如通过局域网内其他设备访问，将地址中的“localhost”替换为服务器ip地址即可。</p>
+
+<p>2. 定位项目和设备</p>
+
+<p>登录后可以看到项目列表中出现了myPython，这便是我们新建的项目。在掌控向SIoT服务器发送第一条数据时（一般会将这个“握手信息”放在主程序MQTT连接成功后），便会在服务器建立掌控板程序中项目ID对应的项目。</p>
+
+<blockquote>
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image8.png" alt="" /></p>
+</blockquote>
+
+<p>3. 发送采集指令</p>
+
+<p>点击“查看项目列表”——“查看消息”，根据我们设计的程序，发送消息“START”后，实验装置开始上传数据。刷新页面后，可以看到更新后的数据记录。</p>
+
+<blockquote>
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image9.png" alt="" /></p>
+
+  <p>这些数据都可以导出为Excel表格，后期进行数据分析。</p>
+
+  <p><img src="/vvlink/assets/img/2019-08-01-【案例】用SIoT与掌控板做热辐射实验/media/image10.png" alt="" /></p>
+</blockquote>
+
+<ol>
+  <li>总结</li>
+</ol>
+
+<p>通过测试，我们发现SIoT的出现，让课堂搭建物联网服务器轻而易举，即便没有任何信息技术学科背景的师生都可一键完成服务器部署，突破了公网物联网平台应用于课堂教学时账号注册、账号管理、数据容量限制的掣肘，恰到好处地满足了日常教学需求。人民教育出版社高中《物理》第一册中，有篇题为“借助传感器用计算机测速度”的内容，其中提及“随着信息技术的发展，中学物理的实验手段也在不断进步。”并指出这种实验手段的进步，使得“同学们可以减少重复性操作，用更多的时间和精力对物理过程进行分析”。从中我们可以看到科学学科对于信息技术的关注，而信息技术也推动和影响着其它学科的变革，SIoT的出现将加速这种变革。如果我们从STEM的角度出发，让孩子们自行DIY数字化实验装置，其过程价值更是不言而喻。数字化实验室出于成本一直难以普及，但是掌控板+SIoT可以替代其中很大一部分功能，加上扩展板后，原有的Arduino传感器基本上可以通用，轻松实现编程、接线、联网，小学生都容易上手，成本低到农村学校也买得起。这将是国内STEM课程普及和落地的一条可行路径。</p>
+
+  </div><a class="u-url" href="/vvlink/2019/08/01/%E6%A1%88%E4%BE%8B-%E7%94%A8SIoT%E4%B8%8E%E6%8E%8C%E6%8E%A7%E6%9D%BF%E5%81%9A%E7%83%AD%E8%BE%90%E5%B0%84%E5%AE%9E%E9%AA%8C.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/vvlink/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/vvlink/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/vvlink/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>虚谷物联提供了一个完整的教育解决方案，利用可以布署在本地的MQTT服务器软件，结合掌控板、虚谷号搭建各种物联网应用，旨在推进中小学物联网技术的教学。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/vvplan" title="vvplan"><svg class="svg-icon grey"><use xlink:href="/vvlink/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
